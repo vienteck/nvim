@@ -1,3 +1,4 @@
-	vim.cmd.colorscheme('kanagawa')
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
-	vim.api.nvim_set_hl(0, "Normal", { bg = "none"})
+vim.cmd.colorscheme('tokyonight-storm')
+vim.cmd('TransparentDisable')
+vim.cmd('set number')
+

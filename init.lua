@@ -1,5 +1,5 @@
-vim.g.mapleader = " " 
-vim.cmd('set number')
+require("vienteck.remap")
+require('vienteck.set')
 local lazypath = vim.fn.stdpath("data") .. "/lazy/lazy.nvim"
 if not vim.loop.fs_stat(lazypath) then
   vim.fn.system({
@@ -13,5 +13,4 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("vienteck.plugins")
-require("vienteck.remap")
-require('vienteck.set')
+

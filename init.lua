@@ -14,3 +14,4 @@ end
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("vienteck.plugins")
 require("vienteck.remap")
+require('vienteck.set')

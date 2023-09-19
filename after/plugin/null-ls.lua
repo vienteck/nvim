@@ -29,4 +29,4 @@ require("null-ls").setup({
 	end,
 })
 
-vim.cmd("map <Leader>lf :lua vim.lsp.buf.format({async = false})<CR>")
+vim.keymap.set("n","<leader>lf",":lua vim.lsp.buf.format({async = false})<CR>")

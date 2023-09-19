@@ -3,7 +3,7 @@ return {
 	{ "folke/neodev.nvim", opts = {} },
 	{ "mfussenegger/nvim-dap" },
 	{ "leoluz/nvim-dap-go" },
-    { "nvim-telescope/telescope-dap.nvim"},
+	{ "nvim-telescope/telescope-dap.nvim" },
 	{
 		"rcarriga/nvim-dap-ui",
 		lazy = false,
@@ -24,6 +24,20 @@ return {
 	{ "rebelot/kanagawa.nvim" },
 	--formatter
 	{ "jose-elias-alvarez/null-ls.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
+	--UI plugins
+	{
+		"folke/which-key.nvim",
+		event = "VeryLazy",
+		init = function()
+			vim.o.timeout = true
+			vim.o.timeoutlen = 300
+		end,
+		opts = {
+			-- your configuration comes here
+			-- or leave it empty to use the default settings
+			-- refer to the configuration section below
+		},
+	},
 	--treesitter
 	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
 	{ "nvim-treesitter/playground" },

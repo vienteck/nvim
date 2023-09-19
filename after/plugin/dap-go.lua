@@ -1,0 +1,7 @@
+require('dap-go').setup()
+vim.keymap.set("n", "<leader>db","<cmd>DapToggleBreakpoint<CR>")
+vim.keymap.set("n", "<F5>", "<cmd>DapContinue<CR>")
+vim.keymap.set("n", "<F10>", "<cmd>DapStepOver<CR>")
+vim.keymap.set("n", "<F11>", "<cmd>DapStepInto<CR>")
+vim.keymap.set("n", "<F12>", "<cmd>DapStepOut<CR>")
+vim.keymap.set("n", "<F1>", "<cmd>DapTerminate<CR>")

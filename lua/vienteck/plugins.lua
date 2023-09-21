@@ -18,13 +18,13 @@ return {
 	{ "ap/vim-css-color" },
 	{ "tpope/vim-commentary" },
 	{ "tpope/vim-surround" },
-	{ "xiyaowong/transparent.nvim", lazy = false },
 	--themes
 	{ "folke/tokyonight.nvim" },
 	{ "rebelot/kanagawa.nvim" },
-	--formatter
+	--formatters
 	{ "jose-elias-alvarez/null-ls.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 	--UI plugins
+    { "m4xshen/autoclose.nvim"}, -- Used to autoclose characters like (){}[]
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",

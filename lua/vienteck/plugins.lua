@@ -19,12 +19,24 @@ return {
 	{ "tpope/vim-commentary" },
 	{ "tpope/vim-surround" },
 	--themes
-	{ "folke/tokyonight.nvim" },
+	{
+		"folke/tokyonight.nvim",
+		lazy = false,
+		priority = 1000,
+		opts = {
+			style = "storm",
+			transparent = true,
+			styles = {
+				sidebars = "transparent",
+				floats = "transparent",
+			},
+		},
+	},
 	{ "rebelot/kanagawa.nvim" },
 	--formatters
 	{ "jose-elias-alvarez/null-ls.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
 	--UI plugins
-    { "m4xshen/autoclose.nvim"}, -- Used to autoclose characters like (){}[]
+	{ "m4xshen/autoclose.nvim" }, -- Used to autoclose characters like (){}[]
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",

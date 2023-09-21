@@ -28,5 +28,3 @@ require("null-ls").setup({
 		end
 	end,
 })
-
-vim.keymap.set("n","<leader>lf",":lua vim.lsp.buf.format({async = false})<CR>")

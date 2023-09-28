@@ -1,4 +1,5 @@
 require('dap-go').setup()
+require('dap-python').setup('~/.virtualenvs/debugpy/bin/python')
 vim.keymap.set("n", "<leader>db","<cmd>DapToggleBreakpoint<CR>")
 vim.keymap.set("n", "<F5>", "<cmd>DapContinue<CR>")
 vim.keymap.set("n", "<F10>", "<cmd>DapStepOver<CR>")

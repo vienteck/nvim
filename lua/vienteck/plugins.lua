@@ -2,6 +2,8 @@ return {
 	--debugger
 	{ "folke/neodev.nvim", opts = {} },
 	{ "mfussenegger/nvim-dap" },
+    { "mfussenegger/nvim-dap-python" },
+
 	{ "leoluz/nvim-dap-go" },
 	{ "nvim-telescope/telescope-dap.nvim" },
 	{
@@ -19,6 +21,7 @@ return {
 	{ "tpope/vim-commentary" },
 	{ "tpope/vim-surround" },
 	--themes
+    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,

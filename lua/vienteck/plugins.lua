@@ -17,10 +17,12 @@ return {
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
 	--html stuff
+    {'windwp/nvim-ts-autotag'},
 	{ "ap/vim-css-color" },
 	{ "tpope/vim-commentary" },
 	{ "tpope/vim-surround" },
 	--themes
+    {'nvim-lualine/lualine.nvim', dependencies='nvim-tree/nvim-web-devicons'},
     { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{
 		"folke/tokyonight.nvim",
@@ -37,7 +39,8 @@ return {
 	},
 	{ "rebelot/kanagawa.nvim" },
 	--formatters
-	{ "jose-elias-alvarez/null-ls.nvim", dependencies = { "nvim-lua/plenary.nvim" } },
+    {'tpope/vim-surround'},
+	{ "jose-elias-alvarez/null-ls.nvim", lazy = false, dependencies = { "nvim-lua/plenary.nvim" } },
 	--UI plugins
 	{ "m4xshen/autoclose.nvim" }, -- Used to autoclose characters like (){}[]
 	{

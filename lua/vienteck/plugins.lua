@@ -2,7 +2,7 @@ return {
 	--debugger
 	{ "folke/neodev.nvim", opts = {} },
 	{ "mfussenegger/nvim-dap" },
-    { "mfussenegger/nvim-dap-python" },
+	{ "mfussenegger/nvim-dap-python" },
 
 	{ "leoluz/nvim-dap-go" },
 	{ "nvim-telescope/telescope-dap.nvim" },
@@ -16,14 +16,9 @@ return {
 		tag = "0.1.3",
 		dependencies = { "nvim-lua/plenary.nvim" },
 	},
-	--html stuff
-    {'windwp/nvim-ts-autotag'},
-	{ "ap/vim-css-color" },
-	{ "tpope/vim-commentary" },
-	{ "tpope/vim-surround" },
 	--themes
-    {'nvim-lualine/lualine.nvim', dependencies='nvim-tree/nvim-web-devicons'},
-    { "catppuccin/nvim", name = "catppuccin", priority = 1000 },
+	{ "nvim-lualine/lualine.nvim", dependencies = "nvim-tree/nvim-web-devicons" },
+	{ "catppuccin/nvim", name = "catppuccin", priority = 1000 },
 	{
 		"folke/tokyonight.nvim",
 		lazy = false,
@@ -38,8 +33,12 @@ return {
 		},
 	},
 	{ "rebelot/kanagawa.nvim" },
-	--formatters
-    {'tpope/vim-surround'},
+	--syntax, highlights and formatting
+	{ "windwp/nvim-ts-autotag" },
+	{ "ap/vim-css-color" },
+	{ "tpope/vim-commentary" },
+	{ "evanleck/vim-svelte", dependencies = { "pangloss/vim-javascript", "othree/html5.vim" } },
+	{ "tpope/vim-surround" },
 	{ "jose-elias-alvarez/null-ls.nvim", lazy = false, dependencies = { "nvim-lua/plenary.nvim" } },
 	--UI plugins
 	{ "m4xshen/autoclose.nvim" }, -- Used to autoclose characters like (){}[]
@@ -68,6 +67,7 @@ return {
 	{
 		"VonHeikemen/lsp-zero.nvim",
 		branch = "v2.x",
+		lazy = false,
 		dependencies = {
 			-- LSP Support
 			{ "neovim/nvim-lspconfig" }, -- Required

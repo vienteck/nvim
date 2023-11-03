@@ -33,6 +33,7 @@ return {
 		},
 	},
 	{ "rebelot/kanagawa.nvim" },
+	{ "olimorris/onedarkpro.nvim" },
 	--syntax, highlights and formatting
 	{ "windwp/nvim-ts-autotag" },
 	{ "ap/vim-css-color" },

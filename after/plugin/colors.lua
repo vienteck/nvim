@@ -1,3 +1,7 @@
-vim.cmd('set number')
-
-vim.cmd.colorscheme('tokyonight-night')
+vim.cmd("set number")
+require("onedarkpro").setup({
+	options = {
+		transparency = true,
+	},
+})
+vim.cmd.colorscheme("onedark")

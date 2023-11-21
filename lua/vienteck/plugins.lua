@@ -43,6 +43,7 @@ return {
 	{ "jose-elias-alvarez/null-ls.nvim", lazy = false, dependencies = { "nvim-lua/plenary.nvim" } },
 	--UI plugins
 	{ "m4xshen/autoclose.nvim" }, -- Used to autoclose characters like (){}[]
+    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",

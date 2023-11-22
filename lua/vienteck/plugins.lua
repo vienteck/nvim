@@ -35,15 +35,12 @@ return {
 	{ "rebelot/kanagawa.nvim" },
 	{ "olimorris/onedarkpro.nvim" },
 	--syntax, highlights and formatting
-	{ "windwp/nvim-ts-autotag" },
 	{ "ap/vim-css-color" },
 	{ "tpope/vim-commentary" },
-	{ "evanleck/vim-svelte", dependencies = { "pangloss/vim-javascript", "othree/html5.vim" } },
 	{ "tpope/vim-surround" },
 	{ "jose-elias-alvarez/null-ls.nvim", lazy = false, dependencies = { "nvim-lua/plenary.nvim" } },
 	--UI plugins
 	{ "m4xshen/autoclose.nvim" }, -- Used to autoclose characters like (){}[]
-    { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	{
 		"folke/which-key.nvim",
 		event = "VeryLazy",
@@ -58,7 +55,10 @@ return {
 		},
 	},
 	--treesitter
-	{ "nvim-treesitter/nvim-treesitter", build = ":TSUpdate" },
+	{
+		"nvim-treesitter/nvim-treesitter",
+		build = ":TSUpdate",
+	},
 	{ "nvim-treesitter/playground" },
 	{ "theprimeagen/harpoon" },
 	{ "mbbill/undotree" },

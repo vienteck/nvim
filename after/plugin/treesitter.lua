@@ -6,6 +6,7 @@ config.setup({
 		"c",
 		"typescript",
 		"html",
+		"cpp",
 		"regex",
 		"bash",
 		"json",

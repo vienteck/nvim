@@ -1,6 +1,17 @@
 return {
 	--debugger
 	{ "folke/neodev.nvim", opts = {} },
+	{
+		"jay-babu/mason-nvim-dap.nvim",
+		event = "VeryLazy",
+		dependencies = {
+			"williamboman/mason.nvim",
+			"mfussenegger/nvim-dap",
+		},
+		opts = {
+			handlers = {},
+		},
+	},
 	{ "mfussenegger/nvim-dap" },
 	{ "mfussenegger/nvim-dap-python" },
 
@@ -74,7 +85,14 @@ return {
 		dependencies = {
 			-- LSP Support
 			{ "neovim/nvim-lspconfig" }, -- Required
-			{ "williamboman/mason.nvim" }, -- Optional
+			{
+				"williamboman/mason.nvim",
+				opts = {
+					"clangd",
+					"clang-format",
+					"codelldb",
+				},
+			}, -- Optional
 			{ "williamboman/mason-lspconfig.nvim" }, -- Optional
 
 			-- Autocompletion

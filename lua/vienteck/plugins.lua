@@ -89,7 +89,6 @@ return {
 				"williamboman/mason.nvim",
 				opts = {
 					"clangd",
-					"clang-format",
 					"codelldb",
 				},
 			}, -- Optional

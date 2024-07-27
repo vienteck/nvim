@@ -14,5 +14,8 @@ wk.register({
 		h = {
 			name = "+GitGutter",
 		},
+    n ={
+      name = "+NerdTree",
+    }
 	},
 })

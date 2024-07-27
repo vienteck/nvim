@@ -1,5 +1,5 @@
 return {
-	--debugger
+	--DEBUGGER
 	{ "folke/neodev.nvim", opts = {} },
 	{
 		"jay-babu/mason-nvim-dap.nvim",
@@ -12,14 +12,20 @@ return {
 			handlers = {},
 		},
 	},
-	{ "mfussenegger/nvim-dap" },
-	{ "mfussenegger/nvim-dap-python" },
-
-	{ "leoluz/nvim-dap-go" },
+  --PYTHON DEBUGGER
+	{ 
+    "mfussenegger/nvim-dap-python",
+     lazy = true,
+  },
+  --GOLANG DEBUGGER
+	{ 
+    "leoluz/nvim-dap-go",
+    lazy = true,
+  },
 	{ "nvim-telescope/telescope-dap.nvim" },
 	{
 		"rcarriga/nvim-dap-ui",
-		lazy = false,
+		lazy = true,
 		dependencies = {
       {"mfussenegger/nvim-dap"},
       {"nvim-neotest/nvim-nio"},
@@ -54,6 +60,7 @@ return {
 	{ "tpope/vim-surround" },
 	{ "jose-elias-alvarez/null-ls.nvim", lazy = false, dependencies = { "nvim-lua/plenary.nvim" } },
 	--UI plugins
+  { "scrooloose/nerdtree"},
 	{ "m4xshen/autoclose.nvim" }, -- Used to autoclose characters like (){}[]
 	{
 		"folke/which-key.nvim",
@@ -90,9 +97,10 @@ return {
 			{ "neovim/nvim-lspconfig" }, -- Required
 			{
 				"williamboman/mason.nvim",
-				opts = {
+				ensure_installed = {
 					"clangd",
 					"codelldb",
+          "clang_format"
 				},
 			}, -- Optional
 			{ "williamboman/mason-lspconfig.nvim" }, -- Optional

@@ -59,6 +59,7 @@ return {
 	{ "tpope/vim-commentary" },
 	{ "tpope/vim-surround" },
 	{ "jose-elias-alvarez/null-ls.nvim", lazy = false, dependencies = { "nvim-lua/plenary.nvim" } },
+  { "ziglang/zig.vim", lazy = false},
 	--UI plugins
   { "scrooloose/nerdtree"},
 	{ "m4xshen/autoclose.nvim" }, -- Used to autoclose characters like (){}[]

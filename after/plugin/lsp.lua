@@ -1,6 +1,3 @@
-local lsp = require('lsp-zero')
-lsp.preset('recommended')
-lsp.setup()
 
 local cmp = require('cmp')
 local cmp_format = require('lsp-zero').cmp_format()

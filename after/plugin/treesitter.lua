@@ -14,6 +14,7 @@ config.setup({
 		"javascript",
 		"lua",
 		"python",
+    "zig",
 	},
 	auto_install = true,
 	highlight = { enable = true },

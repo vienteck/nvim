@@ -1,4 +1,5 @@
 return {
+  { "zbirenbaum/copilot.lua", opts = {}},
 	--DEBUGGER
 	{ "folke/neodev.nvim", opts = {} },
 	{
@@ -22,7 +23,8 @@ return {
     "leoluz/nvim-dap-go",
     lazy = true,
   },
-	{ "nvim-telescope/telescope-dap.nvim" },
+	{
+    "nvim-telescope/telescope-dap.nvim" },
 	{
 		"rcarriga/nvim-dap-ui",
 		lazy = true,

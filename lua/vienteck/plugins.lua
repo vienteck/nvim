@@ -1,5 +1,11 @@
 return {
-  { "zbirenbaum/copilot.lua", opts = {}},
+  { "zbirenbaum/copilot.lua",
+    cmd = "Copilot",
+    event = "InsertEnter",
+    config = function()
+      require("copilot").setup({})
+    end,
+  },
 	--DEBUGGER
 	{ "folke/neodev.nvim", opts = {} },
 	{

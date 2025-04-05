@@ -13,9 +13,6 @@ if not vim.loop.fs_stat(lazypath) then
 		lazypath,
 	})
 end
+
 vim.opt.rtp:prepend(lazypath)
 require("lazy").setup("vienteck.plugins")
-
-vim.cmd([[
-  autocmd BufWritePre *.go lua vim.lsp.buf.format({async = false})
-]])

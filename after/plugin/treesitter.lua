@@ -2,9 +2,6 @@ local config = require("nvim-treesitter.configs")
 
 config.setup({
 	ensure_installed = {
-		"go",
-		"c",
-		"typescript",
 		"html",
 		"cpp",
 		"regex",
@@ -14,7 +11,8 @@ config.setup({
 		"javascript",
 		"lua",
 		"python",
-    "zig",
+		"zig",
+		"rust",
 	},
 	auto_install = true,
 	highlight = { enable = true },
